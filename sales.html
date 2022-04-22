@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Salmon Cookies</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <title>Sales Data</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
-
-
 <body>
-  <header>
-    <h1>Salmon Cookies</h1>
-  </header>
+  <h1><a href="./index.html"> Salmon Cookies</a></h1>
   <main>
-    <section id="cookie-table"></section>
+    <h2>Shop Location Sales Data</h2>
+  
+    <table id="cookie-table"></table>
+
+   <!---  <article id="storeName">
+        <h2></h2>
+          <p></p>
+          <ul>
+            <li></li>
+          </ul>
+          <img>
+      </article> ---> 
+      <form id="form">
+        <fieldset id="fs"> 
+         <legend>Add a Cookie Stand</legend><br>
+         <label for="location">Location:</label>
+         <input type="text" id="location" name="location" placeholder="i.e. Japan" required='required'><br><br>
+         <label for="minCustomers">Min Customers:</label>
+         <input type="number" id="minCustomers" name="minCustomers" min="0"><br><br>
+         <label for="maxCustomers">Max Customers:</label>
+         <input type="number" id="maxCustomers" name="maxCustomers" min="0"><br><br>
+         <label for="avgCookiePerSale">Average Cookie Per Sale:</label>
+         <input type="number" id="avgCookiePerSale" name="avgCookiePerSale" min="0"><br><br>
+         <button type="submit" value="Submit" id="button"> Submit </button>
+        </fieldset>
+       </form>
+      
+
   </main>
-
-
-
-  <script src="app.js"></script>
+  <script src="./app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 </body>
-
 </html>
